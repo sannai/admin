@@ -2,7 +2,7 @@ import axios from 'axios'
 import Cookies from 'js-cookie'
 
 export const instance = axios.create({
-    baseURL: 'http://192.168.0.104:8080/step',
+    baseURL: 'http://192.168.0.105:8080/step',
     // baseURL: 'http://192.168.0.120:80',
 })
 if (Cookies.get('token')) {
