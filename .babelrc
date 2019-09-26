@@ -1,0 +1,38 @@
+{
+    "env": {
+        "development": {
+            "plugins": [
+                "babel-plugin-styled-components",
+                "@babel/plugin-proposal-object-rest-spread",
+                [
+                    "ramda",
+                    {
+                        "useES": true
+                    }
+                ]
+            ]
+        },
+        "production": {
+            "plugins": [
+                "@babel/plugin-proposal-object-rest-spread",
+                [
+                    "ramda",
+                    {
+                        "useES": true
+                    }
+                ]
+            ]
+        }
+    },
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "targets": {
+                    "browsers": ["last 2 Chrome versions"]
+                }
+            }
+        ],
+        "@babel/react"
+    ]
+}
